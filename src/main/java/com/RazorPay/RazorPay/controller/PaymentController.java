@@ -22,6 +22,8 @@ public class PaymentController {
 // fir network ke yah testing krnaa ,whaoar wallet select krna mobikniwk yah kuch bhi fir  success@razorpay.com
 //    daalkar koi bhi opt 6 digit ka daal do
 //    hogaya testing
+
+    //imp secret key agar new generate ki toh add krna application-proeprties and javascript file meh
     @PostMapping("/create-order")
     public String createOrder(@RequestParam int amount,@RequestParam String currency ) throws RazorpayException {
 
